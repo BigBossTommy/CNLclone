@@ -1,0 +1,65 @@
+@import "../styles/variables";
+.layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .cardbody {
+        position: relative;
+        top: -250%;
+        left: 23%;
+        display: flex;
+        .cardimg {
+            position: relative;
+            top: 50%;
+            left: 3%;
+            img {
+                width: 130%;
+                margin-top: 10%;
+            }
+        }
+        .cardtxt {
+            margin-top: 10%;
+            padding: 0% 10%;
+            h1 {
+                font-size: 1.9rem;
+                font-weight: 200;
+                color: $linkscolor;
+                text-decoration: underline;
+                padding-bottom: 3%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .layout {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        .cardbody {
+            top: 40%;
+            left: 3%;
+            display: flex;
+            .cardimg {
+                position: relative;
+                top: 50%;
+                left: 3%;
+                img {
+                    width: 100%;
+                    margin-top: 1%;
+                }
+            }
+            .cardtxt {
+                margin-top: 10%;
+                padding: 0% 10%;
+                h1 {
+                    font-size: 1rem;
+                    font-weight: 300;
+                    color: $linkscolor;
+                    text-decoration: underline;
+                    padding-bottom: 3%;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

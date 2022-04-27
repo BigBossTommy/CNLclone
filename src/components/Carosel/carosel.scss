@@ -1,0 +1,47 @@
+@import '../styles/variables';
+.lay_out {
+    margin-top: -10%;
+    .card_container {
+        display: flex;
+        gap: -5%;
+    }
+    .caroselcards {
+        width: 50%;
+        margin-left: 11%;
+        padding-left: 1%;
+        justify-items: center;
+        padding: 0% 8px;
+        h3 {
+            text-align: center;
+            color: $dark-blue-color;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .lay_out {
+        padding-top: 7%;
+        .card_container {
+            display: flex;
+            gap: -3%;
+            margin-top: -20%;
+        }
+        .caroselcards {
+            width: 50%;
+            margin-left: 7%;
+            padding-left: 1%;
+            justify-items: center;
+            padding: 0% 8px;
+            h3 {
+                text-align: center;
+                color: $dark-blue-color;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}

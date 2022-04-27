@@ -1,0 +1,87 @@
+@import "../styles/variables";
+.orange {
+    width: 100px;
+    height: 100px;
+    background-color: $yellow;
+    margin-left: 64%;
+    margin-top: -27%;
+}
+
+.blue {
+    width: 100px;
+    height: 100px;
+    background-color: $dark-blue-color;
+    margin-left: 82%;
+    margin-top: 1%;
+    opacity: 0%;
+}
+
+.imglink {
+    position: absolute;
+    top: 120%;
+    width: 350px;
+    height: 400px;
+    background-color: $lightblue;
+    margin-left: 65%;
+    margin-top: -15%;
+    margin-bottom: 20%;
+    p {
+        color: $linkscolor;
+        font-size: 1.3rem;
+        padding-top: 5%;
+        padding-left: 4%;
+        text-decoration: underline;
+        cursor: pointer;
+        &:hover {
+            color: $dark-blue-color;
+        }
+    }
+    img {
+        width: 350px;
+    }
+}
+
+@media all and (max-width:1200px) {
+    .orange {
+        width: 50px;
+        height: 50px;
+        margin-left: 64%;
+        margin-top: -28%;
+        display: none;
+    }
+    .blue {
+        position: relative;
+        top: 130%;
+        width: 50px;
+        height: 50px;
+        margin-left: 82%;
+        margin-top: 7%;
+        display: none;
+    }
+    .imglink {
+        position: relative;
+        top: 190%;
+        width: 70%;
+        height: 400px;
+        margin-left: 16%;
+        margin-top: 20%;
+        margin-bottom: 10%;
+        z-index: auto;
+        p {
+            color: $linkscolor;
+            font-size: 1.3rem;
+            padding-top: 5%;
+            padding-left: 14%;
+            text-decoration: underline;
+            cursor: pointer;
+            &:hover {
+                color: $dark-blue-color;
+            }
+        }
+        img {
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 10%;
+        }
+    }
+}
